@@ -3,7 +3,6 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
-#include <windows.h>
 
 using namespace std;
 

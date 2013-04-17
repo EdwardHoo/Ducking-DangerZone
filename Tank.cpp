@@ -1,6 +1,4 @@
-#include "stdafx.h"
 #include "Header.h"
-
 using namespace std;
 
 int main(int argc,char **argv)
@@ -15,7 +13,7 @@ begin:
 		A.GetCommand();
 		B.GetCommand();
 		for(;!GameOver;) {
-			cout<<"A:("<<A.TankPosition.x<<","<<A.TankPosition.y<<") B:("<<B.TankPosition.x<<","<<B.TankPosition.y<<")"<<endl;			
+			cout << "A:(" << A.TankPosition.x << "," << A.TankPosition.y << ") B:(" << B.TankPosition.x << "," << B.TankPosition.y << ")" << endl;			
 			for(int i = 0; i < FlashRate; i++) {
 				A.TankRunCommand();
 			}
@@ -36,11 +34,10 @@ begin:
 					}
 				}
 			}
-			//Sleep(500);
 			Counter++;
 		}
-	}else {
-		cout<<"Sorry, this part is still being writting, press Enter to return;"<<endl;
+	} else {
+		cout << "Sorry, this part is still being writting, press Enter to return;" << endl;
 		cin.get();
 		cin.get();
 		system("cls");

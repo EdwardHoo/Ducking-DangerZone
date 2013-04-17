@@ -9,19 +9,15 @@ bool Bullet::BulletMove(Tank &Tango) {
 	this->BulletPosition.x += 1 * OneStep;
 	this->BulletPosition.y += 1 * (OneStep * Tan);
 	if(BulletPosition.x <= 0) {
-		cout<<"子弹击中左壁。";
 		return true;
 	}
 	if(BulletPosition.y <= 0) {
-		cout<<"子弹击中下壁。";
 		return true;
 	}
 	if(BulletPosition.x >= L) {
-		cout<<"子弹击中右壁。";
 		return true;
 	}
 	if(BulletPosition.y >= W) {
-		cout<<"子弹击中上壁。";
 		return true;
 	}
 	if(BulletPosition.x >= Tango.TankPosition.x - Tango.Width&&BulletPosition.x <= Tango.TankPosition.x + Tango.Width&&
